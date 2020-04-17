@@ -36,6 +36,6 @@ deploy:
     - apt-get update
     - apt-get install --assume-yes rsync
       - rsync --archive --delete --exclude='.git' --exclude='node_modules' . app@172.16.67.128:app
-    - ssh app@app.ntnu.no systemctl --user restart app
+    - ssh app@172.16.67.128 systemctl --user restart app
   only:
     - master
