@@ -1,5 +1,5 @@
 let axios = require('axios');
-let appListen = require('src/server.js').appListen;
+let appListen = require('server.js').appListen;
 
 axios.defaults.baseURL = 'http://localhost:3000';
 
